@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/renatomelo/Desktop/desafio_ds/desafio-titanic/mlruns/789101805065504952/ca31ec7fda0c47c5999c4d16188d12d3/artifacts
+end_time: 1677269058324
+entry_point_name: ''
+experiment_id: '789101805065504952'
+lifecycle_stage: active
+run_id: ca31ec7fda0c47c5999c4d16188d12d3
+run_name: data_science
+run_uuid: ca31ec7fda0c47c5999c4d16188d12d3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1677269058299
+status: 4
+tags: []
+user_id: renatomelo

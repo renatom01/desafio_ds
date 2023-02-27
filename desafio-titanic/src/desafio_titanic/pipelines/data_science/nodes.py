@@ -7,7 +7,7 @@ import logging
 from typing import Dict, Union, List
 from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier
-from sklearn.metrics import accuracy_score
+from sklearn.metrics import accuracy_score, f1_score
 
 def split_data (df: pd.DataFrame):
     train_set, test_set = train_test_split(df, test_size=0.2, random_state=42)
@@ -32,9 +32,12 @@ def evaluate_model(
 ):
     y_pred = classifier.predict(X_test)
     score = accuracy_score(y_test, y_pred)
+    f1_score = f1_score(y_test, y_pred)
+
 #    logger = logging.getLogger(__name__)
 #    logger.info("Model has accuracy of %.3f on test data.", score)
     return {"accuracy_score": {"value": score, "step": 1}}
+
 
 
 #def evaluate_model(
